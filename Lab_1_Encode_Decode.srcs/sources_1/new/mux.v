@@ -1,4 +1,3 @@
-`timescale 1ns / 100ps
 //////////////////////////////////////////////////////////////////
 module mux2_1 (
     input a, b, 
@@ -24,7 +23,6 @@ module mux2_1 (
     end
 */
 endmodule
-`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux2_2 (
     input [1:0] a, b, 
@@ -60,7 +58,6 @@ module mux4_1 (
     end
 */       
 endmodule
-`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux2 # (parameter WIDTH = 4) (
     input [WIDTH-1:0] a, b, 
@@ -69,7 +66,6 @@ module mux2 # (parameter WIDTH = 4) (
     );
     assign f = sel ? b : a;   
 endmodule
-`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux4_8 (
     input [7:0]  a, b, c, d,
@@ -82,8 +78,8 @@ module mux4_8 (
     mux2 M1 (a[7:4], b[7:4], s[0], l[7:4]);
 //    mux2 #8  M01 (a, b, s[0], l); 
    
-    mux2 #8	M2 (c, d, s[0], h);
+    mux2 M2 (c, d, s[0], h);
     
 //    mux2 #8 M3 (l, h, s[1], y);     //��˳�򴫵�
-    mux2 #8 M3 (.f(y), .sel(s[1]), .a(l), .b(h));   //�����ִ���
+    mux2  M3 (.f(y), .sel(s[1]), .a(l), .b(h));   //�����ִ���
 endmodule
