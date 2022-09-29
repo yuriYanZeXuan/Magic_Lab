@@ -24,7 +24,7 @@ module mux2_1 (
     end
 */
 endmodule
-
+`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux2_2 (
     input [1:0] a, b, 
@@ -35,7 +35,7 @@ module mux2_2 (
     mux2_1   M1 (a[1], b[1], sel, f[1]); 
 //    assign f = sel ? b : a;   
 endmodule
-
+`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux4_1 (
     input a, b, c, d,
@@ -60,7 +60,7 @@ module mux4_1 (
     end
 */       
 endmodule
-
+`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux2 # (parameter WIDTH = 4) (
     input [WIDTH-1:0] a, b, 
@@ -69,7 +69,7 @@ module mux2 # (parameter WIDTH = 4) (
     );
     assign f = sel ? b : a;   
 endmodule
-
+`timescale 1ns / 100ps
 /////////////////////////////////////////////////////////////////
 module mux4_8 (
     input [7:0]  a, b, c, d,

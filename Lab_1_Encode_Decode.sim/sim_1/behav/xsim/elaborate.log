@@ -6,16 +6,6 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 73. Module mux4_8 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 73. Module mux4_8 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.mux2

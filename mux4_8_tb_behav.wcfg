@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mux4_8_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mux4_8_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="0.000006 us"></ZoomEndTime>
+      <Cursor1Time time="0.069828 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/mux4_8_tb/D0" type="array">
+      <obj_property name="ElementShortName">D0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_8_tb/D1" type="array">
+      <obj_property name="ElementShortName">D1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_8_tb/D2" type="array">
+      <obj_property name="ElementShortName">D2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_8_tb/D3" type="array">
+      <obj_property name="ElementShortName">D3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">D3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_8_tb/S" type="array">
+      <obj_property name="ElementShortName">S[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mux4_8_tb/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+   </wvobject>
+</wave_config>
