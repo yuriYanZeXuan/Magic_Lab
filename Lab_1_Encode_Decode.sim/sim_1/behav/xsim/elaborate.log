@@ -1,16 +1,26 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: E:/vivado/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4deba64edee7483197f43d1aa00698f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_1_behav xil_defaultlib.mux4_1 xil_defaultlib.glbl -log elaborate.log 
+Running: E:/vivado/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4deba64edee7483197f43d1aa00698f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_8_tb_behav xil_defaultlib.mux4_8_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4100] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
-WARNING: [XSIM 43-4100] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 73. Module mux4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 73. Module mux4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v" Line 64. Module mux2(WIDTH=8) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mux2_1
-Compiling module xil_defaultlib.mux4_1
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.mux2(WIDTH=8)
+Compiling module xil_defaultlib.mux4_8
+Compiling module xil_defaultlib.mux4_8_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot mux4_1_behav
+Built simulation snapshot mux4_8_tb_behav

@@ -7,8 +7,8 @@ module mux2_1_tb(
     wire Y;
     
     mux2_1 DUT(D0, D1, S, Y);
-   mux2_1 DUT(.a(D0), .b(D1), .sel(S), .f(Y));
-   mux2_1 DUT(.f(Y), .a(D0), .sel(S), .b(D1));
+//    mux2_1 DUT(.a(D0), .b(D1), .sel(S), .f(Y));
+//    mux2_1 DUT(.f(Y), .a(D0), .sel(S), .b(D1));
         
     initial begin
         D0 = 0; D1 = 0; S = 0;    // Y = D0 = 0
@@ -31,8 +31,8 @@ module mux4_8_tb(
     wire [7:0] Y;
     
     mux4_8 DUT (D0, D1, D2, D3, S, Y);
-   mux4_8 DUT (.a(D0), .b(D1), .c(D2), .d(D3), .s(S), .y(Y));
-   mux2_1 DUT (.y(Y), .s(S), .c(D2), .d(D3), .b(D1), .a(D0));
+//    mux4_8 DUT (.a(D0), .b(D1), .c(D2), .d(D3), .s(S), .y(Y));
+//    mux2_1 DUT (.y(Y), .s(S), .c(D2), .d(D3), .b(D1), .a(D0));
         
     initial begin
         D0 = 8'b0001_0001;      // 8'h11 = 17

@@ -2,3 +2,6 @@ Running: xsim.dir/mux4_1_behav/xsimk.exe -simmode gui -wdb mux4_1_behav.wdb -sim
 Design successfully loaded
 Design Loading Memory Usage: 7616 KB (Peak: 7616 KB)
 Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 8212 KB (Peak: 8212 KB)
+Simulation CPU Usage: 140 ms
