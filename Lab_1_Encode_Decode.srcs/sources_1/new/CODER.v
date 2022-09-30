@@ -27,31 +27,32 @@ module ECD(
 );
 always @(*) begin
     if (EN==0) 
-        f<=0;
+        f=0;
     else begin
-        f<=1;
+        f=1;
+        y=0;
         if (SW[9]==1)
-            y<=10;
+            y=10;
         else if (SW[8]==1)
-            y<=9;
+            y=9;
         else if (SW[7]==1)
-            y<=8;
+            y=8;
         else if (SW[6]==1)
-            y<=7;
+            y=7;
         else if (SW[5]==1)
-            y<=6;
+            y=6;
         else if (SW[4]==1)
-            y<=5;
+            y=5;
         else if (SW[3]==1)
-            y<=4;
+            y=4;
         else if (SW[2]==1)
-            y<=3;
+            y=3;
         else if (SW[1]==1)
-            y<=2;
+            y=2;
         else if (SW[0]==1)
-            y<=1;
+            y=1;
         else
-            y<=0;
+            y=0;
     end
 end
 endmodule
@@ -61,6 +62,7 @@ module DCD (//binary->BCD  decoder
     output reg[9:0] led
 );
 always @(*) begin
+    led=10'b0;
     case (d)
         0:led[0]=1;
         1:led[1]=1;
@@ -72,7 +74,7 @@ always @(*) begin
         7:led[7]=1;
         8:led[8]=1;
         9:led[9]=1;
-        default:led=10'b0000_0000_00;
+        default:led=10'b0;
     endcase
 end
     
