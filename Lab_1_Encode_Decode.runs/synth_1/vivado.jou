@@ -2,8 +2,8 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Fri Sep 30 21:55:04 2022
-# Process ID: 33900
+# Start of session at: Fri Sep 30 23:53:18 2022
+# Process ID: 52648
 # Current directory: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
 # Command line: vivado.exe -log CODER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CODER.tcl
 # Log file: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/CODER.vds
