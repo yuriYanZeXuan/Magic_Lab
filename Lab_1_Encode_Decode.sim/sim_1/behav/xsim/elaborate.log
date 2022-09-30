@@ -1,16 +1,19 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: E:/vivado/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4deba64edee7483197f43d1aa00698f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mux4_8_tb_behav xil_defaultlib.mux4_8_tb xil_defaultlib.glbl -log elaborate.log 
+Running: E:/vivado/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 4deba64edee7483197f43d1aa00698f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CODER_tb_behav xil_defaultlib.CODER_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/CODER_tb.v:32]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ECD
 Compiling module xil_defaultlib.mux2
-Compiling module xil_defaultlib.mux2(WIDTH=8)
-Compiling module xil_defaultlib.mux4_8
-Compiling module xil_defaultlib.mux4_8_tb
+Compiling module xil_defaultlib.seven_disp_decoder
+Compiling module xil_defaultlib.DCD
+Compiling module xil_defaultlib.CODER
+Compiling module xil_defaultlib.CODER_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot mux4_8_tb_behav
+Built simulation snapshot CODER_tb_behav
