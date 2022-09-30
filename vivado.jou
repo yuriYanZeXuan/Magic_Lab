@@ -84,3 +84,157 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_design rtl_1
+refresh_design
+refresh_design
+launch_simulation
+open_wave_config F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+source CODER_tb.tcl
+add_bp {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/CODER_tb.v} 37
+remove_bps -file {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/CODER_tb.v} -line 37
+add_bp {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/CODER_tb.v} 37
+remove_bps -file {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/CODER_tb.v} -line 37
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+open_wave_config F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+source CODER_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CODER [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+source CODER.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+close_sim
+launch_simulation
+open_wave_config F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+source CODER.tcl
+export_ip_user_files -of_objects  [get_files F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/mux_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sim_1/new/mux_tb.v
+close_sim
+launch_simulation
+open_wave_config F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+source CODER.tcl
+export_ip_user_files -of_objects  [get_files F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 F:/yzx_vivadoproject/Lab_1_Encode_Decode/mux4_8_tb_behav.wcfg
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+close_sim
+launch_simulation
+source CODER.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CODER_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+save_wave_config {F:/yzx_vivadoproject/Lab_1_Encode_Decode/CODER_tb_behav.wcfg}
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+close_sim
+launch_simulation
+source CODER_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [lindex [get_cfgmem_parts {28f00am29ew-bpi-x16}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
