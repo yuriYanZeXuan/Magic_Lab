@@ -1,0 +1,620 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Sep 30 20:25:14 2022
+# Process ID: 64048
+# Current directory: F:/yzx_vivadoproject/Lab_1_Encode_Decode
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34440 F:\yzx_vivadoproject\Lab_1_Encode_Decode\Lab_1_Encode_Decode.xpr
+# Log file: F:/yzx_vivadoproject/Lab_1_Encode_Decode/vivado.log
+# Journal file: F:/yzx_vivadoproject/Lab_1_Encode_Decode\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1137.047 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Fri Sep 30 20:31:47 2022] Launched synth_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Sep 30 20:33:17 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Fri Sep 30 20:36:08 2022] Launched synth_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Sep 30 20:37:37 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1294.391 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1379.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1545.836 ; gain = 408.789
+close_design
+close_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1950.359 ; gain = 396.812
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: CODER
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2067.781 ; gain = 117.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:83]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:83]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2126.516 ; gain = 176.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2144.438 ; gain = 194.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2144.438 ; gain = 194.078
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2144.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2244.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.816 ; gain = 312.457
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 2262.816 ; gain = 312.457
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2346.812 ; gain = 78.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2374.656 ; gain = 106.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2397.562 ; gain = 129.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2397.562 ; gain = 129.215
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2417.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2417.723 ; gain = 149.375
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2417.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:83]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:83]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2417.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2417.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2417.723 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2425.773 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 2425.773 ; gain = 8.051
+refresh_design
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:30]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:32]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:34]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:36]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:38]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:40]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:42]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:44]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:46]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:48]
+ERROR: [Synth 8-2576] procedural assignment to a non-register y is not permitted [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:50]
+INFO: [Synth 8-2350] module ECD ignored due to previous errors [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-2350] module DCD ignored due to previous errors [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:54]
+INFO: [Synth 8-2350] module CODER ignored due to previous errors [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:77]
+Failed to read verilog 'F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:77]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2425.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2435.496 ; gain = 9.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2435.496 ; gain = 9.723
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2452.848 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2452.848 ; gain = 27.074
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2452.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:80]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:80]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2452.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2452.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2452.848 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2460.953 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2460.953 ; gain = 8.105
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2460.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2460.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2460.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2460.953 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2477.113 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2477.113 ; gain = 16.160
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2477.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2477.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2477.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2477.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2479.109 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2479.109 ; gain = 1.996
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2479.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2479.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2479.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2479.109 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2487.590 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2487.590 ; gain = 8.480
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2487.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2487.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2487.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2487.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2489.125 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2489.125 ; gain = 1.535
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2489.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:61]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2489.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2489.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2489.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2505.445 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2505.445 ; gain = 16.320
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Fri Sep 30 21:10:25 2022] Launched synth_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Sep 30 21:11:25 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep 30 21:12:55 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 27 2021-01:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2505.445 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF43CA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 4117.406 ; gain = 1611.961
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 4257.641 ; gain = 108.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:68]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4265.602 ; gain = 116.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4289.453 ; gain = 140.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4289.453 ; gain = 140.039
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4309.918 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 4325.262 ; gain = 175.848
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 4325.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CODER' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+INFO: [Synth 8-6157] synthesizing module 'ECD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ECD' (1#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/mux.v:62]
+INFO: [Synth 8-6157] synthesizing module 'seven_disp_decoder' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_disp_decoder' (3#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/seven_disp_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCD' [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'DCD' (4#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'CODER' (5#1) [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/sources_1/new/CODER.v:82]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4325.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4325.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4325.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4345.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Finished Parsing XDC File [F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.srcs/constrs_1/new/mux4_1.xdc]
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 4353.586 ; gain = 28.324
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Fri Sep 30 21:28:46 2022] Launched synth_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Sep 30 21:29:46 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep 30 21:31:21 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF43CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF43CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1
+
+launch_runs synth_1 -jobs 16
+[Fri Sep 30 21:55:00 2022] Launched synth_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Fri Sep 30 21:55:44 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Fri Sep 30 21:57:02 2022] Launched impl_1...
+Run output will be captured here: F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/yzx_vivadoproject/Lab_1_Encode_Decode/Lab_1_Encode_Decode.runs/impl_1/CODER.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

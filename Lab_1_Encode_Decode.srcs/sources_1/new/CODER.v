@@ -22,38 +22,37 @@
 module ECD(
     input  EN,
     input [9:0] SW,
-    output reg f,
+    output reg  f,
     output reg[14:11] y
 );
 always @(*) begin
-    if (EN==0) 
-        f=0;
-    else begin
-        f=1;
-        y=0;
-        if (SW[9]==1)
-            y=10;
-        else if (SW[8]==1)
-            y=9;
-        else if (SW[7]==1)
-            y=8;
-        else if (SW[6]==1)
-            y=7;
-        else if (SW[5]==1)
-            y=6;
-        else if (SW[4]==1)
-            y=5;
-        else if (SW[3]==1)
-            y=4;
-        else if (SW[2]==1)
-            y=3;
-        else if (SW[1]==1)
-            y=2;
-        else if (SW[0]==1)
-            y=1;
-        else
-            y=0;
+    y<=0;
+    if (EN) begin
+        f<=1;
+        if (SW[9])y<=10;
+            
+        else if(SW[8])y<=9;
+            
+        else if(SW[7])y<=8;
+
+        else if(SW[6])y<=7;
+
+        else if(SW[5])y<=6;
+
+        else if(SW[4])y<=5;
+
+        else if(SW[3])y<=4;
+
+        else if(SW[2])y<=3;
+
+        else if(SW[1])y<=2;
+
+        else if(SW[0])y<=1;
+
+        else y<=0;
     end
+    else
+        f<=0;
 end
 endmodule
 
