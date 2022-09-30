@@ -21,11 +21,11 @@
 
 
 module CODER_tb();
-        reg  [15:0] SW;
-        wire [15:0] led;
-        wire [6:0] segments;
-        wire dp;
-        wire an[7:0];
+    reg  [15:0] SW;
+    wire [15:0] led;
+    wire [6:0] segments;
+    wire dp;
+    wire [7:0] an;
     CODER cd(
         .SW(SW),
         .led(led),

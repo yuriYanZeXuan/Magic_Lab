@@ -23,7 +23,7 @@ module ECD(
     input  EN,
     input [9:0] SW,
     output reg f,
-    output reg[3:0] y
+    output reg[14:11] y
 );
 always @(*) begin
     if (EN==0) 
@@ -82,7 +82,7 @@ module CODER(
     input [15:0] SW,
     output [15:0] led,
     output dp,
-    output [7:0]an,
+    output [7:0] an,
     output [6:0] segments
     );
     wire f;
