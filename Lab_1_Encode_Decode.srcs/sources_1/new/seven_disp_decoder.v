@@ -21,16 +21,16 @@
 
 
 module seven_disp_decoder(
-    input [3:0] SW,
-    output reg [6:0] segments,
-    output [7:0] AN,
-    output  DP
+    input [3:0] IN,//4位BCD码
+    output reg [6:0] segments,//7段字形
+    output [7:0] AN,//使能
+    output  DP//小数点
 );
     assign AN=8'b1111_1110;//使能
     assign DP=1'b1;//关闭小数点
     always @(*) begin
         
-        case(SW)
+        case(IN)
             //            gfe_dcba
             0:segments=7'b100_0000 ;
             1:segments=7'b111_1001;
